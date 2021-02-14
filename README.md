@@ -1,3 +1,32 @@
+# How to update Spotlight
+
+Clone git repository https://github.com/texasuka/spotlight 
+Install yarn https://classic.yarnpkg.com/en/docs/install/#mac-stable
+
+Run yarn  -- this should install any dependencies for the project
+
+(you also might want to use node.js version 10 -- I suggest using nvm for managing multiple node versions)
+
+
+src/pages/spotlights has all the spotlight interviews -- look at those files for reference
+
+To create a new spotlight, create a new directory src/pages/spotlights/<new spotlight>
+Inside that folder, create index.mdx -- this will be the file that you put the interview stuff in.
+
+Go to src/data/nav-items.yaml and create a new directory & path for the new spotlight.
+
+Test to see if everything looks good with yarn dev 
+
+If everything looks okay, yarn deploy
+
+Update master branch with
+
+git add .
+git push origin master
+
+That’s it! Everything should be up at https://spotlight.texasuka.org 
+
+
 # Gatsby Theme Carbon Starter
 
 ## What is this?
